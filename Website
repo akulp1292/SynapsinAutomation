@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Synapsin Automation LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-gray-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Synapsin Automation LLC</h1>
+      <nav>
+        <a href="#services" class="mx-2 hover:text-yellow-500">Services</a>
+        <a href="#payments" class="mx-2 hover:text-yellow-500">Payments</a>
+        <a href="#why-us" class="mx-2 hover:text-yellow-500">Why Us</a>
+        <a href="#contact" class="mx-2 hover:text-yellow-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-white py-16 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold mb-4">We Automate Almost Any Task!</h2>
+      <p class="text-lg mb-8">Synapsin Automation provides powerful, customizable automation solutions to streamline repetitive tasks and boost productivity.</p>
+      <a href="#contact" class="bg-yellow-500 text-white px-6 py-3 rounded shadow hover:bg-yellow-600">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-2xl font-bold mb-4">Process Automation</h3>
+          <p>Eliminate manual tasks with customized scripts for data processing, reporting, and workflow integration.</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-2xl font-bold mb-4">Spreadsheet Optimization</h3>
+          <p>Transform complex spreadsheets into efficient, automated tools that save time and reduce errors.</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-2xl font-bold mb-4">Custom Integrations</h3>
+          <p>Connect your systems seamlessly with bespoke solutions for CRMs, databases, and office tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENTS SECTION -->
+  <section id="payments" class="py-16 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Add-Ons & Pricing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-2xl font-bold mb-4">Payout Calculator</h3>
+          <p>$10 per month</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-2xl font-bold mb-4">Store Credit Informer</h3>
+          <p>$20 per month</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-2xl font-bold mb-4">Store Credit Checker</h3>
+          <p>$15 per month</p>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="#contact" class="bg-yellow-500 text-white px-6 py-3 rounded shadow hover:bg-yellow-600">Subscribe Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US SECTION -->
+  <section id="why-us" class="py-16 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Synapsin Automation?</h2>
+      <ul class="list-disc list-inside">
+        <li><strong>Time Savings:</strong> Automate repetitive tasks to focus on what matters.</li>
+        <li><strong>Reduced Errors:</strong> Minimize manual input and enhance accuracy.</li>
+        <li><strong>Scalable Solutions:</strong> Our tools grow with your business needs.</li>
+        <li><strong>Expert Support:</strong> Comprehensive guidance from design to deployment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+      <form action="https://example.com/contact" method="post" class="max-w-lg mx-auto bg-white p-8 shadow rounded">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" name="name" required class="w-full p-2 border rounded" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-2 border rounded" />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700">Message</label>
+          <textarea id="message" name="message" rows="4" required class="w-full p-2 border rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded shadow hover:bg-yellow-600">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white p-4 text-center">
+    <p>&copy; <span id="year"></span> Synapsin Automation LLC. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
